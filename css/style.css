@@ -44,6 +44,8 @@ a {
     color: white;
     border: 1px solid transparent;
     border-radius: .25rem;
+    font-size: 1.08em;
+    font-family: 'Lora', serif;
 }
 
 .btn:hover {
@@ -63,6 +65,26 @@ a {
     line-height: 1.5rem;
     font-size: 1.2em;
     font-family: 'Lora', serif;
+}
+
+.msg {
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.success {
+    color: #3a6e3a;
+    border: 1px solid #3a6e3a;
+    background: #bcf5bc;
+}
+
+.error {
+    color: #6e3a3a;
+    border: 1px solid #6e3a3a;
+    background: #bcf5bc;
 }
 
 
@@ -241,6 +263,7 @@ header .menu-toggle {
     background: white;
     padding: 20px 50px;
     font-size: 1.1em;
+    border-radius: 5px;
 }
 
 .content .main-content .post {
@@ -250,6 +273,19 @@ header .menu-toggle {
     border-radius: 5px;
     background: white;
     position: relative;
+}
+
+.content .popular .post {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.content .popular .post img {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin-right: 10px;
 }
 
 .content .main-content .post .read-more {
@@ -287,7 +323,10 @@ header .menu-toggle {
 .content .sidebar {
     width: 30%;
     float: left;
-    height: 300px;
+}
+
+.content .sidebar.single {
+    padding: 0px 10px;
 }
 
 .content .sidebar .section {
@@ -322,6 +361,33 @@ header .menu-toggle {
 .content .sidebar .section.topics ul li a:hover {
     padding-left: 10px;
     transition: all 0.3s;
+}
+
+
+/* AUTH PAGES*/
+
+.auth-content {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.auth-content .form-title {
+    text-align: center;
+}
+
+.auth-content form div {
+    margin-bottom: 10px;
+}
+
+.auth-content form p {
+    text-align: center;
+}
+
+.auth-content form p a {
+    text-decoration: underline;
 }
 
 
@@ -423,6 +489,26 @@ header .menu-toggle {
 
 
 /* MEDIA  QUERIES*/
+
+@media only screen and (max-width: 934px) {
+    .content {
+        width: 100%;
+    }
+    .content .main-content .post {
+        width: 100%;
+    }
+    .content .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .content .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+    .content .sidebar .section.search {
+        margin-top: 30px;
+    }
+}
 
 @media only screen and (max-width: 750px) {
     header {
